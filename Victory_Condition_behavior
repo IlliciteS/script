@@ -36,9 +36,9 @@ PV restants : 18 - 21
  Le joueur 2 (Parade) a gagné (39 contre -3)
 + PV_Restant_Total2=39
 + Victoire2=1
-+ Nombre_Match=0                                                  #########SHOULD STOP RIGHT THERE !!!!
-+ echo 'Joueur 1 (Esquive) tente d'\''esquiver'                   #Instead of jumping to Test_Esquive1()
-Joueur 1 (Esquive) tente d'esquiver                               #which has not been called
++ Nombre_Match=0                                                  #########SHOULD STOP RIGHT THERE !!!! HP went negative, match's over.
++ echo 'Joueur 1 (Esquive) tente d'\''esquiver'                   #But it will keep on jumping to Test_Esquive1(), or a part of that function
+Joueur 1 (Esquive) tente d'esquiver                               #which has absolutely not been called
 + Deja_Defendu1=Oui
 + Jet_Esq1=20
 + [[ 20 -gt 10 ]]
