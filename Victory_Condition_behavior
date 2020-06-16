@@ -1,0 +1,58 @@
++ echo 'Joueur 2 (Parade) dispose de 2 NA et attaque'
+Joueur 2 (Parade) dispose de 2 NA et attaque
++ Jet_Touch2=6
++ [[ 6 -gt 10 ]]
++ echo 'L'\''attaque de Joueur 2 (Parade) a réussi ( 6 < 10 )'
+L'attaque de Joueur 2 (Parade) a réussi ( 6 < 10 )
++ NA2=1
++ Nombre_Touch_Reussie2=4
++ Nombre_Degat_Potentiel2=144
++ Test_Esquive1
++ Check_Deja_Denfendu1
++ [[ Non != \N\o\n ]]
++ echo 'Joueur 1 (Esquive) tente d'\''esquiver'
+Joueur 1 (Esquive) tente d'esquiver
++ Deja_Defendu1=Oui
++ Jet_Esq1=15
++ [[ 15 -gt 10 ]]
++ echo 'Esquive Joueur 1 (Esquive) échouée ( 15 > 10 )'
+Esquive Joueur 1 (Esquive) échouée ( 15 > 10 )
++ Degat_Flat2
++ Degat_Flat_By_J2=21
++ echo 'Dégâts infligés : 10 * 2 + 12 + 4 - 10 - 5 = 21'
+Dégâts infligés : 10 * 2 + 12 + 4 - 10 - 5 = 21
++ Nombre_Degat_Reel2=63
++ PV_Restant1
++ echo 'PV restants : 18 - 21 '
+PV restants : 18 - 21
++ PV1=-3
++ echo ' Le joueur 1 (Esquive) a -3 PV restants'
+ Le joueur 1 (Esquive) a -3 PV restants
++ echo ' '
+
++ Victory_Condition
++ [[ -3 -le 0 ]]
++ echo ' Le joueur 2 (Parade) a gagné (39 contre -3)'
+ Le joueur 2 (Parade) a gagné (39 contre -3)
++ PV_Restant_Total2=39
++ Victoire2=1
++ Nombre_Match=0                                                  #########SHOULD STOP RIGHT THERE !!!!
++ echo 'Joueur 1 (Esquive) tente d'\''esquiver'                   #Instead of jumping to Test_Esquive1()
+Joueur 1 (Esquive) tente d'esquiver                               #which has not been called
++ Deja_Defendu1=Oui
++ Jet_Esq1=20
++ [[ 20 -gt 10 ]]
++ echo 'Esquive Joueur 1 (Esquive) échouée ( 20 > 10 )'
+Esquive Joueur 1 (Esquive) échouée ( 20 > 10 )
++ Degat_Flat2
++ Degat_Flat_By_J2=21
++ echo 'Dégâts infligés : 10 * 2 + 12 + 4 - 10 - 5 = 21'
+Dégâts infligés : 10 * 2 + 12 + 4 - 10 - 5 = 21
++ Nombre_Degat_Reel2=84
++ PV_Restant1
++ echo 'PV restants : -3 - 21 '
+PV restants : -3 - 21
++ PV1=-24
++ echo ' Le joueur 1 (Esquive) a -24 PV restants'
+ Le joueur 1 (Esquive) a -24 PV restants
++ echo ' '
